@@ -8,7 +8,7 @@ import { getImageUrl } from './components/utils'
 function App() {
 
     const listaItens = cientistas.map(cientista=>
-    <li key={cientistas.id}>
+    <li key={cientista.id}>
       <img src={getImageUrl(cientista)} alt={cientista.name} className='img' />
       <p>
       <strong>

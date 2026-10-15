@@ -5,7 +5,7 @@ export default function Planetas() {
     return(
     <>
     <h1>Devil may cry</h1>
-    <img src="https://www.adrenaline.com.br/wp-content/uploads/2023/09/devil-may-cry-3-special-edition-capa-310x310.webp" alt="" srcset="" />
+    <img src="https://www.adrenaline.com.br/wp-content/uploads/2023/09/devil-may-cry-3-special-edition-capa-310x310.webp" alt="Capa de Devil May Cry" />
     </>
     )
 }
@@ -22,9 +22,8 @@ export function Terra({desc,descricao}) {
             <h2>Vergil</h2>
             <p>Feito por {desc.feito} Lançado em {desc.lancado} um jogo {desc.tipo}</p>
             <p className="text-center">{descricao}</p>
-            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel"/>
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" />
-            <div class="carousel-inner">
+            <div id="carouselVergil" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
                 <div className="carousel-item active">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyStQPmD_Mi7pP11v10v5VdMTZA6U6vqvPe-Cf-EtN4GQimArLxaaKN5ix_RYKIri6puGacbYOMKD9n3MNWdEUYzdjhRJQpOBBQucLYqeLU9r34evvlKGkpC04Grez9xZKmv-LwT121YE/s1600/Vergil.jpg" className="d-block w-100" alt="..."/>
                 </div>
@@ -34,6 +33,7 @@ export function Terra({desc,descricao}) {
                 <div className="carousel-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZtQ53AQdTMzC-GXhRuFqfixP69MeHWrJvDA&s" className="d-block w-100" alt="..."/>
                 </div>
+            </div>
             </div>
         </>
     )
